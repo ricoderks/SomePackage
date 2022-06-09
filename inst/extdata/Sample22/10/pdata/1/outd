@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2014-10-27 16:23:38.468 +0100  nmrsu@5-PARA-11-0140
+$$ C:/Bruker/TopSpin3.0/prog/curdir/changer/inmrchanger/Oct27-2014-1605-nmrsu/101/data/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_22_NMR/10/pdata/1/outd
+$$ process C:\Bruker\TopSpin3.0\prog\mod\xwish3.exe
+##$CURPLOT= <HP LaserJet 2420 PCL 6>
+##$CURPRIN= <$HP LaserJet 2420 PCL 6>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 11	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2014-10-29 11:12:53.537 +0100  nmrsu@5-PARA-11-0140
+$$ C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_22_NMR/10/pdata/1/assocs
+$$ process C:\Bruker\TopSpin3.0\prog\mod\dataserver.exe
+##$MULTDISP= <C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_40_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_32_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_244_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_281_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_361_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_408_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_460_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_99_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_452_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_123_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_174_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_294_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_333_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_396_NMR/10/pdata/1|C:/u/data/SamTrack/nmr/FOS2014_K_472_B_1_R_1_Q_0_F_4_ID_448_NMR/10/pdata/1>
+##END=

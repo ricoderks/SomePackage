@@ -1,0 +1,127 @@
+# 1 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+;noesygppr1d.comp
+;avance-version (06/11/09)
+;1D version of noesyprtp
+;with presaturation during relaxation delay and mixing time
+;   and spoil gradient
+;
+;$CLASS=HighRes
+;$DIM=1D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+;$OWNER=stsc
+# 1 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance2.incl
+;   for 1
+;
+;avance-version (07/08/21)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+# 141 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/Avance.incl"
+;$Id: Avance2.incl,v 1.23 2009/07/23 15:57:04 ber Exp $
+# 15 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp" 2
+
+# 1 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/Grad.incl" 1
+;Grad2.incl  -  include file for Gradient Spectroscopy
+;   for 1
+;
+;avance-version (07/01/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 27 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/Grad.incl"
+define list<gradient> EA=<EA>
+
+
+# 31 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/Grad.incl"
+;$Id: Grad2.incl,v 1.13 2009/07/02 16:40:43 ber Exp $
+# 16 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp" 2
+
+
+# 19 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+"d12=20u"
+
+
+"acqt0=-p0*2/3.1416"
+# 1 "mc_line 25 file C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp exp. def. part of mc cmd. before ze"
+define delay MCWRK
+define delay MCREST
+"MCWRK = 0.333333*30m"
+"MCREST = 30m - 30m"
+
+    dccorr
+# 25 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+# 25 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+1 ze
+# 1 "mc_line 25 file C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp exp. def. of mc cmd. after ze"
+# 26 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+# 1 "mc_line 26 file C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp exp. start label for mc cmd."
+2 MCWRK  * 2
+LBLF0, MCWRK
+  MCREST
+# 27 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+  4u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+  d12 pl9:f1
+  d1 cw:f1 ph29
+  4u do:f1
+  50u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p16:gp1
+  d16 pl1:f1
+  p1 ph1
+  4u
+  p1 ph2
+  d12 pl9:f1
+  d8 cw:f1
+  4u do:f1
+  p16:gp2
+  d16 pl1:f1
+  ;4u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+  p0 ph3
+  go=2 ph31
+# 1 "mc_line 45 file C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp exp. mc cmd. in line"
+  MCWRK wr #0
+  MCWRK zd
+  lo to LBLF0 times td0
+
+  MCWRK
+# 46 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+exit
+
+
+ph1=0 2 
+ph2=0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2
+ph3=0 0 2 2 1 1 3 3
+ph29=0
+ph31=0 2 2 0 1 3 3 1 2 0 0 2 3 1 1 3
+# 56 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+;pl1 : f1 channel - power level for pulse (default)
+;pl9 : f1 channel - power level for presaturation
+;p0 : for any flip angle
+;p1 : f1 channel -  90 degree high power pulse
+;p16: homospoil/gradient pulse
+;d1 : relaxation delay; 1-5 * T1
+;d8 : mixing time
+;d12: delay for power switching                      [20 usec]
+;d16: delay for homospoil/gradient recovery
+;NS: 8 * n, total number of scans: NS * TD0
+;DS: 4
+
+
+;use gradient ratio:    gp 1 : gp 2
+;                         50 :  -10
+# 72 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+;for z-only gradients:
+;gpz1: 50%
+;gpz2: -10%
+
+;use gradient files:
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+
+# 82 "C:/Bruker/TopSpin3.0/exp/stan/nmr/lists/pp/user/noesygppr1d.comp"
+;$Id: noesygppr1d,v 1.3.2.1 2006/11/10 11:02:26 ber Exp $
